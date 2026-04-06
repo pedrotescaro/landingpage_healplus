@@ -283,11 +283,16 @@ Fluxo recomendado:
 4. testar a versão online;
 5. revisar novamente o download do APK e os canais oficiais.
 
-## Licença
+## Open Source
 
-Até o momento, este repositório **não possui um arquivo `LICENSE` definido**.
+Este repositório é distribuído sob a licença `MIT`.
 
-Se a intenção for publicar o projeto como open source de forma oficial, o ideal é adicionar uma licença apropriada antes do deploy público definitivo.
+Consulte:
+
+- [LICENSE](./LICENSE)
+- [NOTICE](./NOTICE)
+- [CONTRIBUTING.md](./CONTRIBUTING.md)
+- [SECURITY.md](./SECURITY.md)
 
 ## Resumo
 
