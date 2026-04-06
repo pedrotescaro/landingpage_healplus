@@ -2182,6 +2182,7 @@ textarea {
 
   .nav {
     min-height: 68px;
+    padding: 10px 14px;
   }
 
   .nav-links,
@@ -2224,16 +2225,119 @@ textarea {
   }
 
   .section {
-    padding: 78px 0;
+    padding: 68px 0;
+  }
+
+  .site-header {
+    padding-top: 10px;
+  }
+
+  .nav {
+    min-height: 62px;
+    padding: 8px 12px;
+    gap: 14px;
+  }
+
+  .brand {
+    gap: 10px;
+    font-size: 1rem;
+  }
+
+  .brand img {
+    width: 34px;
+    height: 34px;
+  }
+
+  .nav-toggle {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+  }
+
+  .mobile-menu {
+    width: min(calc(100% - 28px), var(--container));
+    margin-top: 10px;
+    padding: 16px;
+    border-radius: 20px;
+  }
+
+  .mobile-menu a {
+    padding: 12px 0;
+  }
+
+  .hero {
+    padding: 108px 0 56px;
+  }
+
+  .eyebrow,
+  .section-label,
+  .workflow-step,
+  .support-badge {
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    gap: 8px;
+  }
+
+  .eyebrow span,
+  .section-label::before {
+    width: 30px;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(2.35rem, 12vw, 3.4rem);
+    max-width: 100%;
+  }
+
+  .section-title {
+    font-size: clamp(1.9rem, 9vw, 2.6rem);
+    line-height: 1.06;
+  }
+
+  .hero-text,
+  .section-copy,
+  .site-footer p {
+    font-size: 0.98rem;
+  }
+
+  .hero-text {
+    margin-top: 22px;
+  }
+
+  .hero-actions {
+    gap: 12px;
+  }
+
+  .button,
+  .nav-cta {
+    width: 100%;
+    min-height: 48px;
+    padding: 0 18px;
+  }
+
+  .hero-badges {
+    gap: 10px;
+    margin-top: 22px;
+  }
+
+  .hero-badge-item {
+    width: 100%;
+    justify-content: flex-start;
+    padding: 10px 12px;
+  }
+
+  .hero-badge-label {
+    line-height: 1.35;
   }
 
   .hero-visual {
-    min-height: 1320px;
+    min-height: 760px;
+    max-width: 360px;
+    margin: 10px auto 0;
   }
 
   .phone {
-    width: 100%;
-    max-width: 256px;
+    width: auto;
+    max-width: 220px;
   }
 
   .phone-main,
@@ -2241,21 +2345,75 @@ textarea {
   .phone-right {
     left: 50%;
     right: auto;
-    transform: translateX(-50%);
+    transform-origin: center center;
   }
 
   .phone-main {
     top: 0;
+    width: min(62vw, 220px);
+    transform: translateX(-50%);
   }
 
   .phone-left {
-    top: 300px;
-    opacity: 0.82;
+    top: 188px;
+    width: min(46vw, 156px);
+    opacity: 0.5;
+    transform: translateX(calc(-50% - 82px)) rotate(-9deg);
   }
 
   .phone-right {
-    top: 720px;
-    opacity: 0.9;
+    top: 204px;
+    width: min(46vw, 156px);
+    opacity: 0.54;
+    transform: translateX(calc(-50% + 82px)) rotate(9deg);
+  }
+
+  .phone-shell {
+    box-shadow: 0 24px 42px rgba(0, 0, 0, 0.28);
+  }
+
+  .resources-showcase-copy,
+  .tech-showcase-copy,
+  .faq-transition-intro {
+    font-size: 0.96rem;
+  }
+
+  .resource-feature-card,
+  .workflow-card,
+  .tech-stack-card,
+  .support-panel,
+  .author-card,
+  .contact-card,
+  .contrast-card,
+  .faq-item {
+    border-radius: 22px;
+  }
+
+  .resource-feature-card,
+  .tech-stack-card,
+  .contact-card {
+    min-height: 0;
+    padding: 20px;
+  }
+
+  .resource-feature-head {
+    margin-bottom: 14px;
+  }
+
+  .resource-feature-kicker {
+    margin-bottom: 10px;
+  }
+
+  .contrast-card {
+    padding: 26px;
+  }
+
+  .bullet-list {
+    margin-top: 22px;
+  }
+
+  .workflow-card {
+    padding: 22px;
   }
 
   .intro-cards,
@@ -2280,7 +2438,8 @@ textarea {
   }
 
   .support-panels {
-    margin-top: 40px;
+    margin-top: 34px;
+    gap: 18px;
   }
 
   .support-spec-row {
@@ -2299,19 +2458,25 @@ textarea {
 
   .author-member-links {
     margin-left: 0;
+    width: 100%;
   }
 
   .contact-grid {
     grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .contact-card {
+    padding: 20px;
+  }
+
+  .contact-card p {
+    font-size: 0.95rem;
   }
 
   .hero-actions {
     flex-direction: column;
     align-items: stretch;
-  }
-
-  .footer-content {
-    flex-direction: column;
   }
 
   .footer-top,
@@ -2331,6 +2496,8 @@ textarea {
 
   .footer-banner {
     align-items: flex-start;
+    padding: 16px 18px;
+    font-size: 0.86rem;
   }
 
   .faq-item summary {
@@ -2351,5 +2518,79 @@ textarea {
 
   .tech-showcase-copy {
     font-size: 0.98rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .container {
+    width: min(calc(100% - 22px), var(--container));
+  }
+
+  .hero {
+    padding-top: 100px;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(2.1rem, 11vw, 3rem);
+  }
+
+  .hero-text {
+    font-size: 0.94rem;
+  }
+
+  .hero-visual {
+    min-height: 700px;
+    max-width: 320px;
+  }
+
+  .phone {
+    max-width: 206px;
+  }
+
+  .phone-main {
+    width: min(66vw, 206px);
+  }
+
+  .phone-left {
+    top: 166px;
+    width: min(44vw, 142px);
+    transform: translateX(calc(-50% - 68px)) rotate(-9deg);
+  }
+
+  .phone-right {
+    top: 180px;
+    width: min(44vw, 142px);
+    transform: translateX(calc(-50% + 68px)) rotate(9deg);
+  }
+
+  .screen-photo,
+  .screen {
+    border-radius: 34px;
+  }
+
+  .resource-feature-card,
+  .tech-stack-card,
+  .workflow-card,
+  .support-panel,
+  .author-card,
+  .contact-card,
+  .contrast-card {
+    padding: 18px;
+  }
+
+  .footer-shell {
+    gap: 28px;
+  }
+
+  .footer-top {
+    gap: 28px;
+  }
+
+  .footer-status-chips {
+    gap: 14px;
+  }
+
+  .footer-copyright {
+    font-size: 0.84rem;
   }
 }
